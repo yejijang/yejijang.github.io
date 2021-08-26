@@ -416,6 +416,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   color: #fff;
 }
 
+.site-logo.project-header a {
+  color: #B38B8F;
+}
+
 .site-navbar {
   margin-bottom: 0px;
   z-index: 1999;
@@ -454,6 +458,17 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .site-navbar .site-navigation .site-menu>li>a {
   padding: 5px 20px;
   color: #fff;
+  display: inline-block;
+  text-decoration: none !important;
+}
+
+.site-navbar .site-navigation.project-nav .site-menu {
+  padding-left: 40px;
+}
+
+.site-navbar .site-navigation.project-nav .site-menu>li>a {
+  color: #B38B8F;
+  padding: 5px 20px;
   display: inline-block;
   text-decoration: none !important;
 }
@@ -836,6 +851,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 .sticky-wrapper.is-sticky .site-navbar .site-logo a {
   color: #000;
+}
+
+.sticky-wrapper.is-sticky .site-navbar .site-logo a:hover {
+  color: #B38B8F;
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu>li {
@@ -1400,10 +1419,13 @@ button {
   padding-bottom: 20px;
 }
 
-.project:hover {
-  cursor: pointer;
+.project:hover .title {
   text-decoration: underline;
+}
+
+.project:hover {
   color: #B38B8F;
+  cursor: pointer;
 }
 
 .project:nth-child(1) {
@@ -1434,10 +1456,11 @@ button {
   flex-wrap: wrap;
   text-align: center;
   width: 540px;
+  font-size: 12px;
 }
 
 .projectTitle {
-  margin-top: 65px;
+  margin-top: 50px;
   font-size: 25px;
 }
 

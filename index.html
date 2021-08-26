@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="css/jquery-ui.css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/jquery-ui.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#header").load("header.html")
+    });
+  </script>
 
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -36,34 +41,7 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
-
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container-fluid">
-        <div class="d-flex align-items-center">
-          <div class="site-logo"><a href="index.html">Eddy's Portfolio</a></div>
-          <div>
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#resume-section" class="nav-link">Resume</a></li>
-                <li><a href="#skill-section" class="nav-link">Skill</a></li>
-                <li><a href="#project-section" class="nav-link">Project</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="ml-auto">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block">
-              </ul>
-            </nav>
-            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span
-                class="icon-menu h3"></span></a>
-          </div>
-        </div>
-      </div>
-
-    </header>
+    <header id="header" class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner"></header>
 
     <div class="intro-section" id="home-section">
       <div class="container">
@@ -351,8 +329,10 @@
           <div class="projectInfo">
             <div class="projectTitle title">AllNightStudyCafe [스터디 카페 시스템]</div>
             <div class="projectSkill title">Java 콘솔 프로젝트</div>
-            <div>진행 인원: 4인</div>
+            <div><span>진행 인원</span>: 4인</div>
             <div>진행 기간: 2021.05.03 ~ 2021.05.11</div>
+            <div>개발 환경: Windows, JDK1.8, Eclipse</div>
+            <div>기술 키워드: BufferedReader, FileReader, ArrayList, Calendar</div>
           </div>
         </div>
         <div class="project" onclick="location.href='project_2.html';">
@@ -362,15 +342,19 @@
             <div class="projectSkill title">Oracle 프로젝트</div>
             <div>진행 인원: 4인</div>
             <div>진행 기간: 2021.05.24 ~ 2021.06.04</div>
+            <div>개발 환경: Windows, eXERD, SQL Developer</div>
+            <div>기술 키워드: ERD, Oracle, PL/SQL, TRIGGER</div>
           </div>
         </div>
         <div class="project" onclick="location.href='project_3.html';">
           <div class="projectImg"><img src="images/slide_3.png" alt="project3"></div>
           <div class="projectInfo">
-            <div class="projectTitle title">SKHU 졸업관리시스템</div>
+            <div class="projectTitle title">SKHU 졸업 관리 시스템</div>
             <div class="projectSkill title">Web 프로젝트</div>
             <div>진행 인원: 5인</div>
             <div>진행 기간: 2018.09 ~ 2018.12</div>
+            <div>개발 환경: Windows, JDK1.8, Eclipse, MySQL Workbench, Git</div>
+            <div>기술 키워드: Java, MySQL, JSP, jQuery, JSTL, HTML5, CSS3</div>
           </div>
         </div>
         <div class="project" onclick="location.href='project_4.html';">
@@ -380,6 +364,8 @@
             <div class="projectSkill title">Spring Web 프로젝트</div>
             <div>진행 인원: 5인</div>
             <div>진행 기간: 2020.03 ~ 2020.06</div>
+            <div>개발 환경: Windows, JDK1.8, STS, MySQL Workbench, Git</div>
+            <div>기술 키워드: Spring Boot, MySQL, MyBatis, Maven, AWS, DNS, http</div>
           </div>
         </div>
         <div class="project" onclick="location.href='project_5.html';">
@@ -389,6 +375,8 @@
             <div class="projectSkill title">Web 프로젝트</div>
             <div>진행 인원: 4인</div>
             <div>진행 기간: 2021.07.13 ~ 2021.08.06</div>
+            <div>개발 환경: Windows, JDK1.8, Eclipse, eXERD, SQL Developer</div>
+            <div>기술 키워드: Java, Oracle, JSP, Servlet, Ajax, API</div>
           </div>
         </div>
       </div>
